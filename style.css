@@ -1,851 +1,179 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-  
-}
-
-html {
-  scroll-behavior: smooth;
-  
-}
-
-body {
-  font-family: Arial, 'Times New Roman', Times, serif;
-  line-height: 2.6;
-   background: rgb(248, 245, 245);
-  padding-top: 70px;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-  padding: 15px 0;
-  display: flex;
-  justify-content: center;
-  background: white;
-}
-
-/*Navigation CSS part*/
-.navbar {
-  display: flex;
-  padding: 0 50px;
-  max-width: 1200px;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar input#menu-toggler {
-  display: none;
-}
-
-.navbar #hamburger-btn {
-  cursor: pointer;
-  display: none;
-}
-
-.navbar .all-links {
-  padding: 2% 6% ;
-  display: flex;
-  align-items: right;
-  text-align: right;
-  font-size: 25px;
-  gap: 20px;
-  font-family: arial,'Times New Roman', Times, serif;
-  position: relative;
-  bottom: 10px;
-  right: -350px;
-  
-  
-}
-
-.navbar .all-links:hover{
-  
-    color: #03a534;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3G Associates</title>
     
-}
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
 
-.navbar .all-links li {
-  padding: auto;
-  position: relative;
-  list-style: none;
-  gap: 10px;
+    <header>
+        <nav class="navbar">
+            <h2 class="logo"><a href="#"></a><img src="images/Logo.jpg" alt=""></h2>
+            
+            <label for="menu-toggler" id="hamburger-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+              </svg>
+            </label>
+            <ul class="all-links">
+              <li><a href="3g.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Project</a></li>
+              <li><a href="service.html">About Us</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+
+    </header>
+
+    <section class="A1">
+      <h2>Our Services</h2>
+    
+    </section>
+
+    <section class="services" id="services">
+     
+      <ul class="cards">
+        <li class="card">
+          <img src="About/P.jpg" alt="img">
+          <heading><h3>Online Property Tax Assessment</h3>
+          <ul>
+            <p>
+            <li>
+               Easy Digital Access – Property details, tax history, and payment options are available on government portals.
+              Automated Valuation – Uses GIS and market data to assess property value quickly and accurately.
+            Convenient Payments – Taxes can be paid online using banking services, UPI, or debit/credit cards.
+            </p>
+            </ul>
+        </li>
+        <li class="card">
+          <img src="About/P.jpg" alt="img">
+          <heading><h3>Offline Property Tax Assessment</h3>
+            <ul>
+              <li>Manual Inspection  – Tax officials physically verify property size, usage, and boundaries.
+              Paper-Based Process – Requires property owners to submit forms and documents in government offices.
+              In-Person Payments – Taxes must be paid at designated municipal offices or banks.
+              </li>
+          </ul>
+        </li>
+        <li class="card">
+          <img src="About/G.jpg" alt="img">
+          <heading><h3>GIS Solution</h3>
+          <p>GIS solutions use spatial data for mapping, analysis, and decision-making. They help in urban planning, tax assessment, and infrastructure management.</p>
+        </li>
+        <li class="card">
+          <img src="About/GIS.jpg" alt="img">
+          <heading><h3>Land Survey</h3>
+          <p>A land base survey maps and measures land features, boundaries, and properties for planning, development, and legal purposes.</p>
+        </li>
+        <li class="card">
+          <img src="About/parcel.jpg" alt="img">
+          <heading><h3>Parcel Mapping</h3>
+          <p>Parcel mapping is the process of creating and maintaining maps that define property boundaries, ownership, and land divisions for tax and planning purposes.</p>
+        </li>
+        <li class="card">
+          <img src="images/surveyImg4.jpg" alt="img">
+          <heading><h3>Consumer Survey</h3>
+          <p>A consumer survey gathers customer feedback to analyze preferences, behavior, and satisfaction for better decision-making.</p>
+        </li>
+        <li class="card">
+          <img src="About/House.jpg" alt="img">
+          <heading><h3>House Hold Survey</h3>
+          <p>A household survey collects data on demographics, income, living conditions, and social aspects to support policy and planning.</p>
+        </li>
+        <li class="card">
+        <img src="About/Socio.jpg" alt="img">
+        <heading><h3>Socio Econimical Survey</h3>
+        <p>Socioeconomics examines the link between economy and society, including social norms, values, and interactions.</p>
+      </li>
+    
+    <li class="card">
+      <img src="About/City.jpg" alt="img">
+      <heading><h3>City Development Survey</h3>
+      <p>A development plan outlines a local authority's land use policies, guiding planning decisions and ensuring consistent, informed development control.</p>
+    </li>
   
-}
-
-
-
-.navbar .logo a {
-  padding: 15px;
-  display: flex;
-  align-items: left;
-  margin-left: 0;
-  text-align: left;
-  left: 100px;
-  padding-left: 0;
-}
-
-
-.navbar .logo img{
-  
-  position: absolute;
-  height: 60px;
-  width: auto;
-  left: 100px;
-  bottom: 38px;
-  justify-content: center;
-  
-
-  
-}
-
-header a, footer a {
-  margin-left: 40px;
-  text-decoration: none;
-  color: #140202;
-  height: 100%;
-  padding: 20px 0;
-  display: inline-block;
-}
-
-header a:hover, footer a:hover {
-  color: #08f328;
-}
-
-
-.homepage {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  background: url("images/web Site/bgmi.jpg");
-  background-position: center;
-  background-size: 1920px;
-
-  
-}
-
-.homepage .text p{
-  
-  font-size: 30px;
-  font-weight: bold;
-}
-
-
-.homepage::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.homepage .content {
-  display: flex;
-  height: 85%;
-  z-index: 3;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.homepage .content h1 {
-  font-size: 60px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.homepage .content .text {
-  margin-bottom: 50px;
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-.content a {
-  color: #000;
-  display: block;
-  text-transform: uppercase;
-  font-size: 18px;
-  margin: 0 10px;
-  padding: 10px 30px;
-  border-radius: 5px;
-  background: #fff;
-  border: 2px solid #fff;
-  transition: 0.4s ease;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-}
-
-.content a:hover {
-  color: #fff;
-  background: rgba(247, 242, 242, 0.3);
-}
-
-section {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 100px 0; /* Uniform padding for all sections */
-  min-height: 10vh; /* Each section takes at least full viewport height */
-  width: 100%;
-}
-
-section h2 {
-  font-size: 2rem;
-}
-
-section > p {
-  text-align: center;
-  font-family: arial,'Times New Roman', Times, serif;
-}
-
-section .cards {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin-top: 50px;
-  padding: 0 10px;
-  justify-content: space-between;
-}
-
-
-
-.navbar #menu-toggler:checked~.all-links {
-  left: 0;
-}
-
-.navbar .all-links li {
-  font-size: 18px;
-}
-
-.navbar #hamburger-btn {
-  display: block;
-}
-
-
-
-section .cards .card {
-  width: calc(100% / 2 - 15px);
-  margin-bottom: 30px;
-}
-
-.homepage .content h1 {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.homepage .content .text {
-  font-size: 17px;
-}
-
-
-/*Homa-section-Services-part*/
-
-
-
-/*Top Heading of Very component*/
-.A1 {
-  backdrop-filter: blur(100px);
-  /* Green transparent background */
-  background: rgba(40, 180, 80, 0.2); /* Green with 20% opacity */
-  
-  /* Blur effect */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
-  
-  /* Light green border */
-  border: 1px solid rgba(100, 220, 120, 0.3);
-  
-  /* Optional extras */
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 100, 0, 0.1); /* Subtle green shadow */
-  /* Container styling */
-  display: flex;
-  justify-content: flex-start; /* Changed from center to flex-start */
-  padding: 80px;
-  width: 100%; /* Ensure full width */
-  box-sizing: border-box; /* Include padding in width calculation */
-}
-
-/* Section Title */
-.A1 h2 {
-  font-size: 3rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: black;
-  /* Removed display:flex and justify-content as they're redundant */
-  margin: 0; /* Remove default margins */
-  padding: 0; /* Remove default padding */
-  text-align: left; /* Explicit left alignment */
-  width: 100%; /* Take full container width */
-}
-
-
-/*Services CSS part*/
-
-
-.services {
-  text-align: center;
-  background: rgb(248, 245, 245);
-  color: white;
-  padding: 60px 20px;
-}
-
-.services .cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-  max-width: 80%;
-  margin: auto;
-}
-
-.services .cards .card {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 80%;
-  padding: 20px;
-  background: rgb(80, 150, 130);
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  position: relative;
-  gap: 20px;
-}
-
-.services .cards .card img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 5px;
-  flex-shrink: 0;
-}
-
-.services .cards .card .text-content {
-  flex: 1;
-  text-align: left;
-}
-
-.services .cards .card h3 {
-  margin: 10px 0;
-  font-size: 24px;
-}
-
-.services .cards .card p {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: bold;
-}
-
-
-/* Hover effect for scaling and shadow */
-.services .cards .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-
-/*Project CSS part*/
-
-.portfolio{
-  text-align: center;
-  background: rgb(248, 245, 245);
-  color: black;
-  padding: 60px 20px;
-}
-
-.portfolio .card {
-  height: 500px;
-  box-shadow: 0 6px 12px rgba(14, 13, 13, 0.2);
-  border-radius: 15px; /* Softened edges */
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
-  background: #ffffff;
-}
-
-.portfolio .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(14, 13, 13, 0.3);
-}
-
-.portfolio .cards .card {
-  padding: 15px;
-  border: 2px solid rgba(8, 243, 40, 0.2);
-  background: white;
-}
-
-.portfolio .cards .card:hover {
-  color: #08f328;
-  border-color: #08f328;
-}
-
-.portfolio .card img {
-  height: 50%;
-  width: 50%;
-  padding-bottom: 20px;
-  aspect-ratio: 16 / 8;
-  border-radius: 10px; /* Making edges more circular */
-  
-}
-
-.portfolio .card h3 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-}
-
-.portfolio .card h4 {
-  font-size: 18px;
-  font-weight: normal;
-  color: #666;
-}
-
-/* Adding subtle animation */
-.portfolio .card:hover h3 {
-  color: #08f328;
-  transform: scale(1.1);
-  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-
-
-
-
-/* About Us Section */
-.service {
-  text-align: center;
-  background: rgb(248, 245, 245);
-  color: black;
-  padding: 60px 20px;
-}
-
-
-
-
-/* Description Text */
-.service p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto 30px;
-  line-height: 1.6;
-  opacity: 1;
-  font-family: Arial, 'Times New Roman', Times, serif;
-  color: black;
-  
-}
-
-
-/* Main Container Box */
-.service-container {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 40px;
-  max-width: 1200px;
-  margin: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Grid Layout for Items */
-.cards1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-/* Individual Card Styling */
-.card1 {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: left;
-  cursor: pointer;
-}
-
-/* Card Heading */
-.card1 h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #ffd700; /* Gold Text */
-}
-
-/* Card Text */
-.card1 p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: black;
-}
-
-/* Hover Effects */
-.card1:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.3);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .service h2 {
-      font-size: 2rem;
-  }
-
-  .service p {
-      font-size: 1rem;
-  }
-
-  .cards1 {
-      grid-template-columns: 1fr;
-  }
-
-  .service-container {
-      padding: 20px;
-  }
-}
-
-
-/* Contact Section Styling */
-
-
-
-
-/* Contact Section */
-.contact-map-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px;
-  gap: 20px;
-  flex-direction: row-reverse; /* Changed this to reverse the order */
-  text-align: center;
-  background: rgb(248, 245, 245);
-  color: white;
-  padding: 60px 20px;
-}
-
-.contact-form, .map {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 45%;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.contact-form:hover, .map:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.contact-map-section h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #1a0f0f;
-  text-decoration: underline;
-}
-
-.input-field {
-  margin-bottom: 20px;
-}
-
-.input-field label {
-  display: block;
-  font-size: 16px;
-  font-weight: bold;
-  color: #555;
-  margin-bottom: 5px;
-  text-align: left;
-}
-
-.input-field input, .input-field textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 14px;
-  outline: none;
-}
-
-.input-field input:focus, .input-field textarea:focus {
-  border-color: #007BFF;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 150px;
-}
-
-.submit-btn {
-  background-color: #007BFF;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.submit-btn:hover {
-  background-color: #0056b3;
-}
-
-.map iframe {
-  border-radius: 10px;
-  width: 100%;
-  height: 300px;
-}
-
-
-
-
-/*Footer CSS part*/
-footer {
-  background: #000; /* Black Background */
-  color: white; /* White Text */
-  padding: 40px 0;
-  font-size: 14px;
-}
-
-.footer-top {
-  padding-bottom: 30px; /* Fixed padding issue */
-  background-color: #000; /* Black */
-}
-
-.footer-top .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.address-section, .contact-section {
-  width: 48%;
-  padding: 20px;
-}
-
-.address-section {
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight:bold;
-
-}
-
-.contact-section {
-  text-align: right;
-  gap: 5px;
-}
-
-.contact-section h4 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color:white; /* White Text */
-  
-}
-
-.address-section h4{
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color:white; /* White Text */
-  
-}
-
-
-
-.contact-section a {
-  color: #0bec1e; /* Yellow for visibility */
-  text-decoration: none;
-}
-
-.contact-section a:hover, .address-section a:hover {
-  text-decoration: underline;
-}
-
-.container-1 {
-  background-color: #000; /* Black */
-}
-
-.copyright {
-  background: #000; /* Black */
-  text-align: center;
-  color: white;
-  padding: 10px;
-  border-top: 1px solid #444;
-}
-
-.credits {
-  background: #000; /* Black */
-  text-align: center;
-  color: white;
-  font-size: 13px;
-}
-
-.credits a {
-  color: #0bec1e; /* Yellow */
-  text-decoration: none;
-}
-
-.credits a:hover {
-  text-decoration: underline;
-}
-
-
-
-/* Career Section  CSS part*/
-.career-section {
-  background: rgb(248, 245, 245);
-  color: white;
-  padding: 30px 30px;
-  text-align: center;
-  display: flex; /* Enables Flexbox */
-  justify-content: flex-end; /* Moves content to the right */
-  align-items: center;
-  
-}
-
-/* Form Container */
-.container {
-  max-width: 700px;
-  width: 100%;
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  color: #333;
-  margin-right: 1000px; /* Pushes form from the right edge */
-}
-
-/* Heading of carrar page*/
-
-/* Left-align the Career section text */
-.career-text {
-  text-align: left;
-  padding-left: 1000px; /* Adjust left spacing as needed */
-  height: 100px;
-}
-
-.career .name {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #000;
-}
-
-.slowgen h3 {
-  font-size: 80px; /* Adjusted font size for better readability */
-  font-weight: 600; /* Removed 'px' as it's not needed for font-weight */
-  margin-bottom: 10px; /* Increased margin for better spacing */
-  font-family: Arial, 'Times New Roman', Times, serif;
-  color: black;
-  display: inline; /* Added inline property */
-  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.7); /* Increased shadow effect */
-}
-
-.slowgen p {
-  font-size: 18px; /* Set a consistent font size for paragraph */
-  max-width: 700px; /* Increased max-width for a better text width */
-  line-height: 1.6; /* Improved line height for better readability */
-  font-weight: 400; /* Regular font weight for better balance with bold headings */
-  font-family: Arial, 'Times New Roman', Times, serif;
-  margin: 0 auto; /* Center the paragraph text */
-  text-align: justify; /* Justify text for better alignment */
-  color: #000;
-  display: inline; /* Added inline property */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Added shadow */
-}
-
-
-
-/* Form Styling */
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-input, select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-input:focus, select:focus {
-  border-color: #4b79a1;
-  outline: none;
-}
-
-/* Submit Button */
-.submit-btn {
-  background: #4b79a1;
-  color: white;
-  border: none;
-  padding: 12px;
-  width: 100%;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.submit-btn:hover {
-  background: #283e51;
-}
-
-
-
-/* Responsive */
-@media (max-width: 768px) {
-  .career-section {
-      justify-content: center; /* Center form on smaller screens */
-      padding: 40px 20px;
-  }
-
-  .container {
-      margin-right: 0;
-  }
-}
-
-
-
-@media screen and (max-width: 860px) {
-  .navbar .all-links {
-    position: fixed;
-    left: -100%;
-    width: 300px;
-    display: block;
-    height: 100vh;
-    top: 75px;
-    background: #333;
-    transition: left 0.3s ease;
-  }
-
-}
+  <li class="card">
+    <img src="About/DGPS.jpg" alt="img">
+    <heading><h3>DGPS Survey</h3>
+    <p>Differential Global Positioning Systems (DGPSs) supplement and enhance the positional data 
+      available from global navigation satellite systems (GNSSs). A DGPS for GPS can increase accuracy by 
+      about a thousandfold, from approximately 15 metres (49 ft) to 1–3 centimetres (1⁄2–1+1⁄4
+       in).</p>
+  </li>
+
+<li class="card">
+  <img src="About/Software.jpg" alt="img">
+  <heading><h3>Software Solution</h3>
+  <p>A software solution is a tailored system or application that addresses specific business or user needs efficiently.</p>
+</li>
+
+<li class="card">
+  <img src="About/Doc.jpg" alt="img">
+  <heading><h3>Documents management system solutions</h3>
+  <p>A document management system (DMS) is usually a computerized system used to 
+    store, share, track and manage files or documents. Some systems include history 
+    tracking where a log of the various versions created and modified by different users is 
+    recorded.</p>
+</li>
+
+<li class="card">
+  <img src="About/Dig.jpg" alt="img">
+  <heading><h3> Document scanning & Digitization solutions</h3>
+  <p>Document scanning & digitization solutions convert physical documents into digital formats for easy storage, access, and management.</p>
+</li>
+
+<li class="card">
+  <img src="About/Dig2.jpg" alt="img">
+  <heading><h3>Arial mapping through drone</h3>
+  <p>Aerial survey is a method of collecting geomatics or other imagery by 
+    using airplanes, helicopters, UAVs, balloons or other aerial methods.</p>
+</li>
+</ul>
+
+ </section>
+
+   
+ <footer id="footer">
+    
+
+  <div class="container-1">
+    <div class="footer-top">
+      
+          <div class="row">
+              <div class="contact-section">
+                  <h4>Contact</h4>
+                  <p><strong>Phone:</strong> <a href="tel:07122984809">+91 07122984809</a></p>
+                  <p><strong>Email:</strong> <a href="mailto:3gasso@gmail.com">3gasso@gmail.com</a></p>
+                  
+              </div>
+              <div class="address-section">
+                  <h4>Address</h4>
+                  <p><strong>Nagpur Office</strong></p>
+                  <p>3G Associates<br>First Floor, Kuraskar Bhavan,<br>Near Vishal Mega Mart,<br>Bhande Plot Square,<br>Nagpur-440024, Maharashtra</p>
+              </div>
+          </div>
+      
+  </div>
+      <div class="copyright">
+          &copy; Copyright <strong><span>3GAssociates 2025</span></strong>. All Rights Reserved 
+      </div>
+      <div class="credits">
+          Designed and Developed by<a href="http://www.3GAssociates.org"><b>3GAssociates 2025</b></a> 
+      </div>
+  </div>
+</footer>
+ 
+
+    
+</body>
+</html>
